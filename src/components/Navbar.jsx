@@ -1,8 +1,12 @@
 import React from "react";
+import Background from '../imgs/background-1.jpg'
 
 const Navbar = () => {
   return (
-    <nav className="bg-blue-600 p-4">
+    <div>
+     
+       <nav className="bg-blue-600 p-4">
+       <img src={Background} alt="/" />
       <div className="container mx-auto flex items-center justify-between">
         {/* <!-- Logo on the left --> */}
         <div className="flex items-center">
@@ -57,6 +61,8 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </div>
+   
   );
 };
 
