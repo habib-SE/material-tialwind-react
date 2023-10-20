@@ -10,8 +10,6 @@ import {
 } from "../../node_modules/react-icons/ai";
 
 
-
-
 const Navbar = () => {
 
   const [nav, setNav] = useState (false);
@@ -30,29 +28,31 @@ const Navbar = () => {
 
           {/* <!-- Centered navigation links --> */}
           <ul className="flex space-x-8 ">
+
             <li className="nav-item">
-              <a href="/" className="text-white hover:text-gray-300">
-              <AiFillHome/> Home
+              <a href="/" className="text-white flex  hover:text-gray-300">
+              <AiFillHome className="mr-2"/> Home
+              </a>
+            </li>
+           
+            <li className="nav-item">
+              <a href="/" className="text-white flex hover:text-gray-300">
+              <AiOutlineProfile className="mr-2"/>Profile
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="text-white hover:text-gray-300">
-                Profile
+              <a href="/" className="text-white flex hover:text-gray-300">
+              <AiOutlineMobile className="mr-2"/>Sign In
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="text-white hover:text-gray-300">
-                Sign in
+              <a href="/" className="text-white flex hover:text-gray-300">
+              <AiOutlineUserAdd className="mr-2"/> Sign Up
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="text-white hover:text-gray-300">
-                Sign up
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/" className="text-white hover:text-gray-300">
-                Docs
+              <a href="/" className="text-white flex hover:text-gray-300">
+              <AiOutlinePaperClip className="mr-2"/> Docs
               </a>
             </li>
           </ul>
@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
          
         </div>
-        <div onClick={handleClick} className='md:hidden block  mx-[95%] mt-4 z-10'>
+        <div onClick={handleClick} className='md:hidden block  mx-[98%] mt-4 z-10'>
            {!nav ?  <AiOutlineMenu size={20} color="white" /> :<AiOutlineClose size={20} color="white" />} 
            
           </div>
@@ -82,33 +82,36 @@ const Navbar = () => {
         <div className="md:hidden relative top-[-2%]">
           <div className="flex items-center mb-5">
             <a href="/" className="text-white text-xl font-semibold">
-              Material Tailwind React
+            Material Tailwind React
             </a>
           </div>
-          <ul className={!nav ? 'hidden': " justify-between space-x-4 items-center sm:flex-col w-[530px] h-[350px] border rounded-lg p-8 bg-white "}>
+          <ul className={!nav ? 'hidden': " justify-between space-x-4 items-center sm:flex-col w-[530px] h-[360px] border rounded-lg p-8 bg-white "}>
             <li></li>
-            <li className="nav-item p-2">
-              <a href="/" className="text-black ">
-               <span><AiFillHome/></span>Home</a>
+            <div>
+            <li className="nav-item p-2 ">
+              <a href="/" className="text-black flex ">
+               <AiFillHome className="mr-2"/>Home</a>
             </li>
+            </div>
+           
             <li className="nav-item p-2">
-              <a href="/" className="text-black ">
-                Profile
+              <a href="/" className="text-black flex ">
+              <AiOutlineProfile className="mr-2"/> Profile
               </a>
             </li>
             <li className="nav-item p-2">
-              <a href="/" className="text-black ">
-                Sign in
+              <a href="/" className="text-black flex ">
+              <AiOutlineMobile className="mr-2"/>Sign In
               </a>
             </li>
             <li className="nav-item p-2">
-              <a href="/" className="text-black ">
-                Sign up
+              <a href="/" className="text-black flex ">
+              <AiOutlineUserAdd className="mr-2"/> Sign Up
               </a>
             </li>
             <li className="nav-item p-2">
-              <a href="/" className="text-black ">
-                Docs
+              <a href="/" className="text-black flex ">
+              <AiOutlinePaperClip className="mr-2"/> Docs
               </a>
             </li>
             {/* Buttons on the right */}
