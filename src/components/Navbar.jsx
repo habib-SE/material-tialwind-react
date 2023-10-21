@@ -8,14 +8,18 @@ import {
   AiOutlineUserAdd,
   AiOutlinePaperClip,
 } from "../../node_modules/react-icons/ai";
+import background from '../imgs/background1.jpeg'
+import Home from "./home/Home";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div>
-      <nav className="bg-white-600 p-4 imageWrapper  ">
+    <div >
+       <img className="imageWrapper bg-contain md:bg-contain" src={background} alt="/" />
+      <nav className= "bg-white-600 p-4">
+       
         <div className="container mx-auto  items-center justify-between hidden md:flex">
           {/* <!-- Logo on the left --> */}
           <div className="flex items-center">
@@ -144,19 +148,8 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Home text */}
-        <div className="text-white py-6">
-          <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-            <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold md:py-6">
-              Your story starts with us.
-            </h1>
-            <p className="md:text-2xl text-xl font-bold text-gray-300">
-              his is a simple example of a Landing Page you can build using
-              Material Tailwind. It features multiple components based on the
-              Tailwind CSS and Material Design by Google.
-            </p>
-          </div>
-        </div>
+          {/* Home components */}
+        <Home/>
       </nav>
     </div>
   );
