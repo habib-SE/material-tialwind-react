@@ -17,8 +17,11 @@ const Navbar = () => {
 
   return (
     <div >
-       <img className="imageWrapper bg-contain md:bg-contain" src={background} alt="/" />
-      <nav className= "bg-white-600 p-4">
+       <img className="imageWrapper bg-contain md:bg-contain" src="" alt="/" style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${background})`,
+    backgroundSize: 'cover',
+  }} />
+      <nav className= "bg-white-600 p-4 ">
        
         <div className="container mx-auto  items-center justify-between hidden md:flex">
           {/* <!-- Logo on the left --> */}
@@ -147,9 +150,8 @@ const Navbar = () => {
             </div>
           </ul>
         </div>
-
-          {/* Home components */}
-        <Home/>
+                  {/* Home components */}
+                  <Home/>
       </nav>
     </div>
   );
