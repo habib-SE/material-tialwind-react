@@ -18,6 +18,27 @@
     bottom: 0;
     z-index: 0;
     max-height: 200vh;
+    background-image: url(../imgs/background1.jpeg);
 
+z-index: -1
+}
+/* 2nd bg */
+.bg2{
+    position: relative
+}
+
+.bg2{ position: absolute;
+    width: 1800%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    max-height: 200vh;
+ background-image: url(../imgs/background-2\ \(2\).jpg);
 z-index: -1
 }

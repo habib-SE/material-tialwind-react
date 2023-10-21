@@ -1,11 +1,18 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Profile from "./components/home/Profile";
+import { Route, Router, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div>
       <Navbar/>
-      <Profile/>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Profile />} />
+        </Routes>
+      </Router>
+      
     </div>
   );
 }
