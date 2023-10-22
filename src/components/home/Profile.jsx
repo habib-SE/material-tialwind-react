@@ -1,9 +1,10 @@
 import React from 'react'
 import background2 from "../../imgs/background-2 (2).jpg"
-
+import Navbar from '../Navbar'
 const Profile = () => {
   return (
     <div className='profile'>
+      <Navbar/>
       <img className="bg2 bg-contain md:bg-contain"  style={{
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${background2})`,
     backgroundSize: 'cover',}} alt="/" />

@@ -39,7 +39,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a href="/home" className="text-white flex  hover:text-gray-300">
                 <AiFillHome className="mr-2" />
-                <Link to='home'>
+                <Link to='/home'>
             Home
           </Link>
               </a>
@@ -48,7 +48,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a href="/profile" className="text-white flex hover:text-gray-300">
                 <AiOutlineProfile className="mr-2" />
-                <Link to='profile'>
+                <Link to='/profile'>
             Profile
           </Link>
               </a>

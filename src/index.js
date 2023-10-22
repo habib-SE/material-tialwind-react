@@ -5,7 +5,7 @@ import "./Css/tailwind.css"
 import {
   createBrowserRouter,
   RouterProvider,
-  Route
+
 } from "react-router-dom";
 import Home from './components/home/Home';
 import Profile from './components/home/Profile';
