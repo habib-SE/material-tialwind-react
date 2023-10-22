@@ -9,18 +9,20 @@ import {
   AiOutlinePaperClip,
 } from "../../node_modules/react-icons/ai";
 import background from '../imgs/background1.jpeg'
-import Home from "./home/Home";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  
 
   return (
     <div >
-       <img className="imageWrapper bg-contain md:bg-contain" src="" alt="/" style={{
+       <img className="imageWrapper bg-contain md:bg-contain" style={{
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${background})`,
     backgroundSize: 'cover',
-  }} />
+  }} alt="/" />
       <nav className= "bg-white-600 p-4 ">
        
         <div className="container mx-auto  items-center justify-between hidden md:flex">
@@ -33,31 +35,37 @@ const Navbar = () => {
 
           {/* <!-- Centered navigation links --> */}
           <ul className="flex space-x-8 ">
+            
             <li className="nav-item">
-              <a href="/" className="text-white flex  hover:text-gray-300">
-                <AiFillHome className="mr-2" /> Home
+              <a href="/home" className="text-white flex  hover:text-gray-300">
+                <AiFillHome className="mr-2" />
+                <Link to='home'>
+            Home
+          </Link>
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="/" className="text-white flex hover:text-gray-300">
+              <a href="/profile" className="text-white flex hover:text-gray-300">
                 <AiOutlineProfile className="mr-2" />
-                Profile
+                <Link to='profile'>
+            Profile
+          </Link>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="text-white flex hover:text-gray-300">
+              <a href="/sign in" className="text-white flex hover:text-gray-300">
                 <AiOutlineMobile className="mr-2" />
                 Sign In
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="text-white flex hover:text-gray-300">
+              <a href="/sign up" className="text-white flex hover:text-gray-300">
                 <AiOutlineUserAdd className="mr-2" /> Sign Up
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="text-white flex hover:text-gray-300">
+              <a href="/docs" className="text-white flex hover:text-gray-300">
                 <AiOutlinePaperClip className="mr-2" /> Docs
               </a>
             </li>
@@ -66,13 +74,13 @@ const Navbar = () => {
           {/* <!-- Buttons on the right --> */}
           <div className="flex space-x-4">
             <a
-              href="/"
+              href="/proversion"
               className="py-2 text-white px-4 rounded-full font-bold hover:bg-blue-200"
             >
               PRO VERSION
             </a>
             <a
-              href="/"
+              href="/fredownload"
               className=" bg-blue-700 font-bold text-white py-2 px-4 rounded-full hover:bg-blue-600"
             >
               FREE DOWNLOAD
@@ -111,7 +119,7 @@ const Navbar = () => {
             <li></li>
             <div>
               <li className="nav-item p-2 ">
-                <a href="/" className="text-black flex ">
+                <a href="/home" className="text-black flex ">
                   <AiFillHome className="mr-2" />
                   Home
                 </a>
@@ -119,23 +127,23 @@ const Navbar = () => {
             </div>
 
             <li className="nav-item p-2">
-              <a href="/" className="text-black flex ">
+              <a href="/profile" className="text-black flex ">
                 <AiOutlineProfile className="mr-2" /> Profile
               </a>
             </li>
             <li className="nav-item p-2">
-              <a href="/" className="text-black flex ">
+              <a href="/sign in" className="text-black flex ">
                 <AiOutlineMobile className="mr-2" />
                 Sign In
               </a>
             </li>
             <li className="nav-item p-2">
-              <a href="/" className="text-black flex ">
+              <a href="/sign up" className="text-black flex ">
                 <AiOutlineUserAdd className="mr-2" /> Sign Up
               </a>
             </li>
             <li className="nav-item p-2">
-              <a href="/" className="text-black flex ">
+              <a href="/docs" className="text-black flex ">
                 <AiOutlinePaperClip className="mr-2" /> Docs
               </a>
             </li>
@@ -151,19 +159,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-        {/* Home text */}
-        <div className="text-white py-6 ">
-          <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-            <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold md:py-6">
-              Your story starts with us.
-            </h1>
-            <p className="md:text-2xl text-xl font-bold text-gray-300">
-              his is a simple example of a Landing Page you can build using
-              Material Tailwind. It features multiple components based on the
-              Tailwind CSS and Material Design by Google.
-            </p>
-          </div>
-        </div>
+        
     </div>
   );
 };

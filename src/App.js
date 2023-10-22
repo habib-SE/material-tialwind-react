@@ -1,19 +1,25 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Profile from "./components/home/Profile";
-import { Route, Router, Routes } from "react-router-dom";
+// import Navbar from "./components/Navbar";
+// import Profile from "./components/home/Profile";
+// import { BrowserRouter as Router , Routes , Route  } from "react-router-dom";
+// import Home from "./components/home/Home";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Profile />} />
-        </Routes>
-      </Router>
+    <div></div>
+  //   <Router>
       
-    </div>
+  //   <div>
+  //   <Navbar/>
+  //   <Profile/>
+  //     <Routes>
+  //       <Route path="/home" exact component={Home} />
+  //       <Route path="/profiel" exact component={Profile} />
+  //     </Routes>
+      
+  //   </div>
+  // </Router>
+   
   );
 }
 
