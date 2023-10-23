@@ -113,36 +113,36 @@ const Navbar = () => {
             className={
               !nav
                 ? "hidden"
-                : " justify-between space-x-4 items-center sm:flex-col w-[500px] h-[360px] border rounded-lg p-6 bg-white "
+                : " justify-between space-x-4 items-center sm:flex-col w-[450px] h-[360px] border rounded-lg p-8 bg-white "
             }
           >
             <li></li>
-            <div>
-              <li className="nav-item p-2 ">
+            
+              <li className="nav-item py-2 ">
                 <a href="/home" className="text-black flex ">
                   <AiFillHome className="mr-2" />
                   Home
                 </a>
               </li>
-            </div>
+            
 
-            <li className="nav-item p-2">
+            <li className="nav-item py-2 ">
               <a href="/profile" className="text-black flex ">
                 <AiOutlineProfile className="mr-2" /> Profile
               </a>
             </li>
-            <li className="nav-item p-2">
+            <li className="nav-item py-2">
               <a href="/sign in" className="text-black flex ">
                 <AiOutlineMobile className="mr-2" />
                 Sign In
               </a>
             </li>
-            <li className="nav-item p-2">
+            <li className="nav-item py-2">
               <a href="/sign up" className="text-black flex ">
                 <AiOutlineUserAdd className="mr-2" /> Sign Up
               </a>
             </li>
-            <li className="nav-item p-2">
+            <li className="nav-item py-2">
               <a href="/docs" className="text-black flex ">
                 <AiOutlinePaperClip className="mr-2" /> Docs
               </a>

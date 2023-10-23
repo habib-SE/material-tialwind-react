@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../Navbar';
+
 
 const Home = () => {
  
   return (
     <div>
-      <Navbar/>
+
        {/* Home text */}
        <div className="text-white py-6 ">
           <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">

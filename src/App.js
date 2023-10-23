@@ -1,12 +1,17 @@
 import React from "react";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 // import Profile from "./components/home/Profile";
 // import { BrowserRouter as Router , Routes , Route  } from "react-router-dom";
-// import Home from "./components/home/Home";
+import Home from "./components/home/Home";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div></div>
+    <div>
+      <Link to='/home'> <Navbar/>
+      <Home/></Link>
+     
+    </div>
   //   <Router>
       
   //   <div>
