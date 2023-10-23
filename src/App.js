@@ -8,8 +8,10 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Link to='/home'> <Navbar/>
-      <Home/></Link>
+     <Link>
+     <Navbar/>
+      <Home/>
+     </Link>
      
     </div>
   //   <Router>

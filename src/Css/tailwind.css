@@ -41,3 +41,8 @@ z-index: -1
  background-image: url(../imgs/background-2\ \(2\).jpg);
 z-index: -1
 }
+.team2{
+    border: 0rem;
+    border-image: round;
+    
+}
