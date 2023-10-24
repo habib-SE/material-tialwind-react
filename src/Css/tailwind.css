@@ -46,3 +46,23 @@ z-index: -1
     border-image: round;
     
 }
+
+.bg3{
+    position: relative
+}
+
+.bg3{ position: absolute;
+    width: 1800%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    max-height: 200vh;
+ background-image: url(../imgs/background-3.jpg);
+z-index: -1
+}

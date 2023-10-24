@@ -7,8 +7,9 @@ import {
   FaMapMarker,
   FaUniversity,
   FaCheck,
-} from "../../../node_modules/react-icons/fa";
-import Line from "./Line";
+} from "react-icons/fa";
+import Line from "../Line";
+
 const Profile = () => {
   return (
     <div className="profile">

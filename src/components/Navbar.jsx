@@ -58,7 +58,7 @@ const Navbar = () => {
                 className="text-white flex hover:text-gray-300"
               >
                 <AiOutlineMobile className="mr-2" />
-                Sign In
+               <Link to='/signin'>Sign In</Link> 
               </a>
             </li>
             <li className="nav-item">
@@ -66,7 +66,8 @@ const Navbar = () => {
                 href="/sign up"
                 className="text-white flex hover:text-gray-300"
               >
-                <AiOutlineUserAdd className="mr-2" /> Sign Up
+                <AiOutlineUserAdd className="mr-2" /> 
+                <Link to='/signup'>Sign Up</Link>
               </a>
             </li>
             <li className="nav-item">

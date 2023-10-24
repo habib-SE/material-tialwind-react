@@ -1,4 +1,4 @@
-// Line.js
+
 import React from 'react';
 
 const Line = () => {
