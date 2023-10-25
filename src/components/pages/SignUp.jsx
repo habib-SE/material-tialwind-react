@@ -31,7 +31,7 @@ const SignUp = () => {
   };
 
   return (
-    <div>
+    <div className=' relative'>
          <Link>
         <Navbar />
       </Link>
@@ -114,8 +114,19 @@ const SignUp = () => {
           </button>
         </form>
       </div>
-    </div>
 
+      
+    </div>
+{/* Sign up footer */}
+<div className=' text-white flex justify-between '>
+        <p className=' w-full mb-10 ml-5'>© 2023, made with  by Creative Tim for a better web.</p>
+        <ul className='flex mb-10 space-x-12 w-full ml-[50%] '>
+          <a href="https://www.creative-tim.com/?_ga=2.121443400.1512150645.1698038522-1444195519.1697136884"><li>Creative Tim</li></a>
+          <a href="https://www.creative-tim.com/presentation?_ga=2.55891435.1512150645.1698038522-1444195519.1697136884"><li>bout U</li></a>
+         <a href="https://www.creative-tim.com/blog?_ga=2.89464283.1512150645.1698038522-1444195519.1697136884"> <li>Blog</li></a>
+          <a href="https://www.creative-tim.com/license?_ga=2.121557448.1512150645.1698038522-1444195519.1697136884"><li>icense</li></a>
+        </ul>
+      </div>
     </div>
   )
 }

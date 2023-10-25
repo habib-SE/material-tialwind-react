@@ -38,9 +38,10 @@ const SignIn = () => {
         alt="/"
       />
       {/* Header of button */}
-      <div className=" bg-blue-700 text-white font-bold p-4 w-[15%] text-2xl text-center absolute transform -translate-x-1/2 mt-[10%] ml-[50%] rounded-md">
+      <div className=" bg-blue-700  text-white font-bold p-4 sm:p-2 sm:w-[10%] sm:text-xl w-[15%] text-2xl text-center absolute transform -translate-x-1/2 mt-[10%] ml-[50%] rounded-md">
         <button>Sign In</button>
       </div>
+      
 
       {/* Sign In form */}
       <div className="w-2/1 h-3/1 py-[14%] max-w-sm mx-auto">
