@@ -58,7 +58,7 @@ const Navbar = () => {
                 className="text-white flex hover:text-gray-300"
               >
                 <AiOutlineMobile className="mr-2" />
-               <Link to='/signin'>Sign In</Link> 
+                <Link to="/signin">Sign In</Link>
               </a>
             </li>
             <li className="nav-item">
@@ -66,13 +66,15 @@ const Navbar = () => {
                 href="/sign up"
                 className="text-white flex hover:text-gray-300"
               >
-                <AiOutlineUserAdd className="mr-2" /> 
-                <Link to='/signup'>Sign Up</Link>
+                <AiOutlineUserAdd className="mr-2" />
+                <Link to="/signup">Sign Up</Link>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/docs" className="text-white flex hover:text-gray-300">
-                <AiOutlinePaperClip className="mr-2" /> Docs
+              <a href="https://www.material-tailwind.com/docs/react/installation" className="text-white flex hover:text-gray-300">
+                <AiOutlinePaperClip className="mr-2" />
+                    Docs
+                
               </a>
             </li>
           </ul>
@@ -164,7 +166,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      
     </div>
   );
 };

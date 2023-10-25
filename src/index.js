@@ -12,6 +12,7 @@ import Home from './components/pages/Home';
 import SignIn from './components/pages/SignIn';
 import SignUp from './components/pages/SignUp';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: < SignUp/>,
-  }
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
