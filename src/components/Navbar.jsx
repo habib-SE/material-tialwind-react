@@ -71,10 +71,13 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="https://www.material-tailwind.com/docs/react/installation" className="text-white flex hover:text-gray-300">
+              <a href="https://www.material-tailwind.com/docs/react/installation"
+                    target="_blank"
+                    rel="noopener noreferrer" className="text-white flex hover:text-gray-300">
                 <AiOutlinePaperClip className="mr-2" />
+                <Link to="/docs">
                     Docs
-                
+                </Link>
               </a>
             </li>
           </ul>
