@@ -137,7 +137,7 @@ const SignUp = () => {
         <p className=" w-full mb-10 ml-5">
           © 2023, made with by Creative Tim for a better web.
         </p>
-        <ul className="flex mb-10 space-x-12 w-full ml-[50%] ">
+        <ul className="flex mb-10 space-x-12 w-full ml-[40%] ">
           <a href="https://www.creative-tim.com/?_ga=2.121443400.1512150645.1698038522-1444195519.1697136884">
             <li>Creative Tim</li>
           </a>

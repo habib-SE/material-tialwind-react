@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
 
           {/* <!-- Centered navigation links --> */}
-          <ul className="flex space-x-8 ">
+          <ul className="hidden md:flex space-x-8 ">
             <li className="nav-item">
               <a href="/home" className="text-white flex  hover:text-gray-300">
                 <AiFillHome className="mr-2" />
