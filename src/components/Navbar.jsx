@@ -39,7 +39,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a href="/home" className="text-white flex  hover:text-gray-300">
                 <AiFillHome className="mr-2" />
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
               </a>
             </li>
 
