@@ -126,10 +126,14 @@ const SignUp = () => {
             </button>
           </form>
           <div className="flex py-4 mx-5 w-full">
-              <p>Don't have an account?</p>
-              <Link > <button className=" text-blue-700 hover:text-blue-600 font-bold mx-1">Sign In</button></Link>
-             
-            </div>
+            <p>Don't have an account?</p>
+            <Link>
+              {" "}
+              <button className=" text-blue-700 hover:text-blue-600 font-bold mx-1">
+                Sign In
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       {/* Sign up footer */}

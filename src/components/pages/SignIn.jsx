@@ -22,7 +22,7 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic 
+    // Add form submission logic
   };
   return (
     <div className="relative">
@@ -41,7 +41,6 @@ const SignIn = () => {
       <div className=" bg-blue-700  text-white font-bold p-4 sm:p-2 sm:w-[10%] sm:text-xl w-[30%] text-2xl text-center absolute transform -translate-x-1/2 mt-[10%] ml-[50%] rounded-md">
         <button>Sign In</button>
       </div>
-      
 
       {/* Sign In form */}
       <div className="w-2/1 h-3/1 py-[14%] max-w-sm mx-auto">
@@ -101,16 +100,17 @@ const SignIn = () => {
             >
               Sign In
             </button>
-           
           </div>
           <div className="flex py-3 mx-5 w-full">
-              <p>Don't have an account?</p>
-              <button className=" text-blue-700 hover:text-blue-600 font-bold mx-1">Sign Up</button>
-            </div>
+            <p>Don't have an account?</p>
+            <button className=" text-blue-700 hover:text-blue-600 font-bold mx-1">
+              Sign Up
+            </button>
+          </div>
         </form>
       </div>
-       {/* Sign up footer */}
-       <div className=" text-white flex justify-between ">
+      {/* Sign up footer */}
+      <div className=" text-white flex justify-between ">
         <p className=" w-full mb-10 ml-5">
           © 2023, made with by Creative Tim for a better web.
         </p>
