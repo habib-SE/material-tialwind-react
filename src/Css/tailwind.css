@@ -21,6 +21,7 @@
 
 z-index: -1
 }
+
 /* 2nd bg */
 .bg2{
     position: relative
@@ -47,6 +48,7 @@ z-index: -1
     
 }
 
+/* image bg3 */
 .bg3{
     position: relative
 }

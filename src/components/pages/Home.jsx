@@ -6,8 +6,10 @@ const Home = () => {
   return (
     <div>
       {/* Home text */}
-      <Link ><Navbar/></Link>
-      
+      <Link>
+        <Navbar />
+      </Link>
+
       <div className=" text-white py-6 ">
         <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
           <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold md:py-6">
