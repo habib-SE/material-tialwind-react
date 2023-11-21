@@ -3,10 +3,12 @@ import background3 from "../../imgs/background-3.jpg";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 
-const SignIn = () => {
+
+const SignIn = ({SignUp}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isChecked, setIsChecked] = useState(false);
+
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -103,8 +105,8 @@ const SignIn = () => {
           </div>
           <div className="flex py-3 mx-5 w-full">
             <p>Don't have an account?</p>
-            <button className=" text-blue-700 hover:text-blue-600 font-bold mx-1">
-              Sign Up
+            <button className="  text-blue-700 hover:text-blue-600 font-bold mx-1">
+            <Link to='/signup'> Sign Up</Link>
             </button>
           </div>
         </form>

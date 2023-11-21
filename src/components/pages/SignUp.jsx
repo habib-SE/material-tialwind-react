@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import background3 from "../../imgs/background-3.jpg";
-const SignUp = () => {
+const  SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -130,7 +130,7 @@ const SignUp = () => {
             <Link>
               {" "}
               <button className=" text-blue-700 hover:text-blue-600 font-bold mx-1">
-                Sign In
+              <Link to='/signin'>Sign In</Link> 
               </button>
             </Link>
           </div>
