@@ -31,14 +31,23 @@ const Home = () => {
       <div className="container mx-auto absolute top-[90%] inset-0 flex items-center justify-center z-10">
         <div className="grid grid-cols-3 gap-10">
           <div className="flex">
-            <Card title="Awarded Agency" text="Divide details about your product or agency work into parts. A paragraph describing a feature will be enough." />
+            <Card
+              title="Awarded Agency"
+              text="Divide details about your product or agency work into parts. A paragraph describing a feature will be enough."
+            />
           </div>
           <div className="flex">
-            <Card title="Free Revisions" text="
-          Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious." />
+            <Card
+              title="Free Revisions"
+              text="
+          Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious."
+            />
           </div>
           <div className="flex">
-            <Card title="Verified Company" text="Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!" />
+            <Card
+              title="Verified Company"
+              text="Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!"
+            />
           </div>
         </div>
       </div>
