@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import Card from "./Card";
+import Work from "./Work";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       </Link>
 
       {/* Upper Section */}
-      <div className="text-white py-6 relative">
+      <div className="text-white py-6">
         <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
           <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold md:py-6">
             Your story starts with us.
@@ -51,6 +52,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+     { /* Work Section */}
+<div className="work-container">
+  <Work />
+</div>
+
     </div>
   );
 };
