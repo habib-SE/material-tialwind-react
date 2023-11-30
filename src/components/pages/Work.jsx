@@ -3,10 +3,10 @@ import Card from "./Card";
 
 const Work = () => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2">
       {/* Column 1 */}
       <div className="work mt-[40%] w-full ml-[10%]">
-        <h1 className="text-2xl font-bold">Working with us is a pleasure</h1>
+        <h1 className=" md:text-2xl font-bold">Working with us is a pleasure</h1>
         <p className=" w-full">
           Don't let your users guess by attaching tooltips and popovers to any
           element. Just make sure you enable them first via JavaScript. The kit
@@ -20,13 +20,12 @@ const Work = () => {
       </div>
 
       {/* Column 2 */}
-      <div className="card-wrapper mt-[40%] w-full ml-[30%]">
+      <div className=" mt-[40%] ml-[30%]">
         <Card
           
           title="Verified Company"
           text="Write a few lines about each one. A paragraph describing a feature will be enough. Keep your user engaged!"
         />
-        {/* Add another Card component here or any other content for the second column */}
       </div>
     </div>
   );

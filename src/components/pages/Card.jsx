@@ -10,8 +10,8 @@ const Card = ({ title, text }) => {
         </div>
 
         <div className=" px-[4%] py-[4%]">
-          <div className="font-bold text-xl text-center mb-2">{title}</div>
-          <p className="text-gray-700 w-full text-base">{text}</p>
+          <div className="font-bold text-center mb-2">{title}</div>
+          <p className="text-gray-700 mx-auto text-center flex flex-col justify-center w-full text-base">{text}</p>
         </div>
       </div>
     </div>
